@@ -30,10 +30,34 @@ function ask_yes_or_no() {
     esac
 }
 
-if [[ "no" == $(ask_yes_or_no "Do you want to continue?") || \
-      "no" == $(ask_yes_or_no "Are you sure?") ]]
-then
-    echo ""
-    echo "Exiting bootstrap."
-    exit 0
-fi
+# if [[ "no" == $(ask_yes_or_no "Do you want to continue?") || \
+#       "no" == $(ask_yes_or_no "Are you sure?") ]]
+# then
+#     echo ""
+#     echo "Exiting bootstrap."
+#     exit 0
+# fi
+
+echo ""
+
+echo "Creating bootstrap config folder [ ~/.bootstrap ]"
+mkdir -p ~/.bootstrap/tmp
+
+cd ~/.bootstrap/tmp
+curl -OL https://github.com/borestad/bootstrap/raw/master/packages/dialog-1.2-20130928.tgz
+tar -xvf ./dialog-1.2-20130928.tgz
+cd dialog-1.2-20130928
+./configure --disable-debug --disable-dependency-tracking
+sudo make install
+
+echo ""
+echo "Available workflows:"
+
+echo "curl -fsSL https://raw.githubusercontent.com/borestad/bootstrap/master/os/centos/centos7/bootstrap.sh | sh"
+echo "curl -fsSL https://raw.githubusercontent.com/borestad/bootstrap/master/os/osx/yosemite/bootstrap.sh | sh"
+echo "curl -fsSL https://raw.githubusercontent.com/borestad/bootstrap/master/os/ubuntu/ubuntu-14.04.2-server/bootstrap.sh | sh"
+
+
+
+
+
