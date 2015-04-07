@@ -9,6 +9,7 @@ echo ""
 
 echo "This is a bootstrap script that will help you setup your machine from scratch."
 echo "It is tested on OSX/Ubuntu/Centos and is meant for my personal setup, both client and server side."
+echo "The script will build an initial machine state thay may be cloned or used as a boilerplate."
 
 echo ""
 echo "==== DISCLAIMER ===="
