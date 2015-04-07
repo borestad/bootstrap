@@ -1,4 +1,5 @@
 #!/bin/sh
+# Manual: http://www.freebsd.org/cgi/man.cgi?query=dialog&sektion=1&n=1
 
 dialog --backtitle "OS selection" \
   --radiolist "Select your workflow:" 15 100 5 \
