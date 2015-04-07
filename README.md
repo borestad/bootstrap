@@ -6,4 +6,4 @@ Bootstrap setup for my personal server cluster
 
     or if you like less writing...
 
-    curl -fsSL https://bit.ly/1DHzT7C
+    curl -fsSL https://bit.ly/1DHzT7C | sh
