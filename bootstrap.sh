@@ -30,13 +30,13 @@ function ask_yes_or_no() {
     esac
 }
 
-# if [[ "no" == $(ask_yes_or_no "Do you want to continue?") || \
-#       "no" == $(ask_yes_or_no "Are you sure?") ]]
-# then
-#     echo ""
-#     echo "Exiting bootstrap."
-#     exit 0
-# fi
+if [[ "no" == $(ask_yes_or_no "Do you want to continue?") || \
+      "no" == $(ask_yes_or_no "Install & compile bootstrap dependencies?") ]]
+then
+    echo ""
+    echo "Exiting bootstrap."
+    exit 0
+fi
 
 echo ""
 
