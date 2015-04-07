@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo ""
-echo "==== BOOTSTRAP v0.1 ===="
+echo "==== BOOTSTRAP v0.1.001 ===="
 echo ""
 echo "Johan Borestad | 2015"
 echo "https://github.com/borestad/bootstrap"
