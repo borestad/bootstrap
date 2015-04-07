@@ -22,7 +22,6 @@ echo ""
 echo "==== SETUP ===="
 echo ""
 
-
 function ask_yes_or_no() {
     read -p "$1 ([y]es or [N]o): "
     case $(echo $REPLY | tr '[A-Z]' '[a-z]') in
