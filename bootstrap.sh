@@ -50,12 +50,15 @@ cd dialog-1.2-20130928
 ./configure --disable-debug --disable-dependency-tracking
 sudo make install
 
-echo ""
-echo "Available workflows:"
 
-echo "curl -fsSL https://raw.githubusercontent.com/borestad/bootstrap/master/os/centos/centos7/bootstrap.sh | sh"
-echo "curl -fsSL https://raw.githubusercontent.com/borestad/bootstrap/master/os/osx/yosemite/bootstrap.sh | sh"
-echo "curl -fsSL https://raw.githubusercontent.com/borestad/bootstrap/master/os/ubuntu/ubuntu-14.04.2-server/bootstrap.sh | sh"
+dialog --title 'Congratulations' --msgbox 'Bootstrap was successfully installed' 10 50
+
+# echo ""
+# echo "Available workflows:"
+
+# echo "curl -fsSL https://raw.githubusercontent.com/borestad/bootstrap/master/os/centos/centos7/bootstrap.sh | sh"
+# echo "curl -fsSL https://raw.githubusercontent.com/borestad/bootstrap/master/os/osx/yosemite/bootstrap.sh | sh"
+# echo "curl -fsSL https://raw.githubusercontent.com/borestad/bootstrap/master/os/ubuntu/ubuntu-14.04.2-server/bootstrap.sh | sh"
 
 
 
