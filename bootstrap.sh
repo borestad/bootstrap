@@ -22,36 +22,29 @@ echo ""
 echo "==== SETUP ===="
 echo ""
 
-function ask_yes_or_no() {
-    read -p "$1 ([y]es or [N]o): "
-    case $(echo $REPLY | tr '[A-Z]' '[a-z]') in
-        y|yes) echo "yes" ;;
-        *)     echo "no" ;;
-    esac
-}
+echo ""
+echo "Install & compile bootstrap dependencies?  (y/n)"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+  echo "Creating bootstrap config folder [ ~/.bootstrap ]"
+  mkdir -p ~/.bootstrap/tmp
 
-if [[ "no" == $(ask_yes_or_no "Do you want to continue?") || \
-      "no" == $(ask_yes_or_no "Install & compile bootstrap dependencies?") ]]
-then
-    echo ""
-    echo "Exiting bootstrap."
-    exit 0
+  cd ~/.bootstrap/tmp
+  curl -OL https://github.com/borestad/bootstrap/raw/master/packages/dialog-1.2-20130928.tgz
+  tar -xvf ./dialog-1.2-20130928.tgz
+  cd dialog-1.2-20130928
+  ./configure --disable-debug --disable-dependency-tracking
+  sudo make install
+
+
+  dialog --title 'Congratulations' --msgbox 'Bootstrap was successfully installed' 10 50
+
+else
+  echo ""
+  echo "Exiting bootstrap."
+  exit 0
 fi
 
-echo ""
-
-echo "Creating bootstrap config folder [ ~/.bootstrap ]"
-mkdir -p ~/.bootstrap/tmp
-
-cd ~/.bootstrap/tmp
-curl -OL https://github.com/borestad/bootstrap/raw/master/packages/dialog-1.2-20130928.tgz
-tar -xvf ./dialog-1.2-20130928.tgz
-cd dialog-1.2-20130928
-./configure --disable-debug --disable-dependency-tracking
-sudo make install
-
-
-dialog --title 'Congratulations' --msgbox 'Bootstrap was successfully installed' 10 50
 
 # echo ""
 # echo "Available workflows:"
