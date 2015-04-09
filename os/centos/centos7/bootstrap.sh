@@ -1,7 +1,13 @@
 #!/bin/sh
 
+echo "Update system? (Press any key to continue)"
 sudo yum update
-sudo yum install wget
+
+# echo "Install wget? (Press any key to continue)"
+# sudo yum install wget
+
+echo "Install git? (Press any key to continue)"
+sudo yum install git
 git clone git@github.com:borestad/bootstrap.git ~/.bootstrap
 
 echo "Install linuxbrew? (Press any key to continue)"
