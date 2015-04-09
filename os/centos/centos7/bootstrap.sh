@@ -10,7 +10,7 @@ echo "Install git? (Press any key to continue)"
 sudo yum install git
 
 echo "Install git? (Press any key to continue)"
-git clone git@github.com:borestad/bootstrap.git ~/.bootstrap
+git clone https://github.com/borestad/bootstrap.git ~/.bootstrap
 cd ~/.bootstrap && git pull
 
 # echo "Install linuxbrew? (Press any key to continue)"
