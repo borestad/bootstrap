@@ -1,7 +1,7 @@
 #!/bin/sh
 
-echo "Update system? (Press any key to continue)"
-sudo yum update
+#echo "Update system? (Press any key to continue)"
+#sudo yum update
 
 # echo "Install wget? (Press any key to continue)"
 # sudo yum install wget
