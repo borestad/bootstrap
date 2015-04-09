@@ -2,6 +2,7 @@
 
 sudo yum update
 sudo yum install wget
+git clone git@github.com:borestad/bootstrap.git ~/.bootstrap
 
 echo "Install linuxbrew? (Press any key to continue)"
 read -r
