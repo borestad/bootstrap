@@ -3,11 +3,13 @@
 echo "Update system? (Press any key to continue)"
 sudo yum update
 
-echo "Install wget? (Press any key to continue)"
-sudo yum install wget
+# echo "Install wget? (Press any key to continue)"
+# sudo yum install wget
 
 echo "Install git? (Press any key to continue)"
 sudo yum install git
+
+echo "Install git? (Press any key to continue)"
 git clone git@github.com:borestad/bootstrap.git ~/.bootstrap
 
 # echo "Install linuxbrew? (Press any key to continue)"
