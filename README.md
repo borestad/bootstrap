@@ -1,5 +1,7 @@
-# bootstrap
-Bootstrap setup for my personal server cluster with tons of virtual machines.
+# bootstrap (or "Automate the shit out of everything")
+Bootstrap setup for my personal server cluster with tons of "virtual" machines with different flavors of hypervisors like VMWare, KVM, Xen, Proxmox, Docker.
+
+
 
 # Disclaimer
 This account is connected to my sparkleshare account and may not be production ready.
