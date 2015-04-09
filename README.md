@@ -2,7 +2,7 @@
 Bootstrap setup for my personal server cluster with tons of virtual machines.
 
 # Disclaimer
-This account is connected to my sparkleshare account and may not be production ready
+This account is connected to my sparkleshare account and may not be production ready.
 
 # Generic Usage (May not work at all atm)
 Requirements:
