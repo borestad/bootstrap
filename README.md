@@ -1,4 +1,6 @@
-# bootstrap (or "automate the shit out of everything")
+# bootstrap 
+## Codename: "automate the shit out of everything"
+
 Bootstrap setup for my personal server cluster with tons of "virtual" machines with different flavors of hypervisors like VMWare, KVM, Xen, Proxmox, Docker.
 
 
