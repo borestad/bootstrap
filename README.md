@@ -1,5 +1,5 @@
 # bootstrap
-Bootstrap setup for my personal server cluster
+Bootstrap setup for my personal server cluster with tons of virtual machines
 
 # Disclaimer
 This account is connected to my sparkleshare account and may not be production ready
