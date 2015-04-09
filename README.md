@@ -8,12 +8,13 @@ This account is connected to my sparkleshare account and may not be production r
     curl -o /tmp/b.sh https://raw.githubusercontent.com/borestad/bootstrap/master/bootstrap.sh && sh /tmp/b.sh
 
 # Usage with OSX Yosemite
-* Requirements:
+Requirements:
 - Xcode from App Store
+
     curl -o /tmp/b.sh https://raw.githubusercontent.com/borestad/bootstrap/master/osx/yosemite/bootstrap.sh && sh /tmp/b.sh
 
 # Usage with CENTOS 7
-* Requirements:
+Requirements:
 - yum install gcc
 
     curl -o /tmp/b.sh https://raw.githubusercontent.com/borestad/bootstrap/master/centos/centos7/bootstrap.sh && sh /tmp/b.sh
