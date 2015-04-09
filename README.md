@@ -20,4 +20,4 @@ Requirements:
 Requirements:
 - yum install gcc
 
-    curl --no-sessionid -o /tmp/b.sh https://raw.githubusercontent.com/borestad/bootstrap/master/os/centos/centos7/bootstrap.sh && sh /tmp/b.sh
+    wget https://raw.githubusercontent.com/borestad/bootstrap/master/os/centos/centos7/bootstrap.sh -O - | sh
