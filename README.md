@@ -20,4 +20,4 @@ Requirements:
 Requirements:
 - yum install gcc
 
-    wget https://raw.githubusercontent.com/borestad/bootstrap/master/os/centos/centos7/bootstrap.sh -O - | sh
+    wget --cache=off https://raw.githubusercontent.com/borestad/bootstrap/master/os/centos/centos7/bootstrap.sh -O - | sh
