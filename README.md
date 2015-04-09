@@ -5,6 +5,9 @@ Bootstrap setup for my personal server cluster
 This account is connected to my sparkleshare account and may not be production ready
 
 # Generic Usage (May not work at all atm)
+Requirements:
+- Cold beer or warm coffee
+
     curl -o /tmp/b.sh https://raw.githubusercontent.com/borestad/bootstrap/master/bootstrap.sh && sh /tmp/b.sh
 
 # Usage with OSX Yosemite
